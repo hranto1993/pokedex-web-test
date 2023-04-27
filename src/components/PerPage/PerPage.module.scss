@@ -1,0 +1,39 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  font-family: 'Quicksand', sans-serif;
+  color: rgb(57, 116, 135);
+  cursor: pointer;
+  min-width: 172px;
+
+  &__number {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &__img {
+      width: 15px;
+      margin-left: 10px;
+
+      polyline {
+        stroke: rgb(57, 116, 135);
+      }
+    }
+  }
+}
+
+.dropdown {
+  position: absolute;
+  z-index: 2;
+  left: -15px;
+  text-align: center;
+  width: 50px;
+  top: 26px;
+  height: fit-content;
+  background-color: white;
+
+  &__each {
+    padding: 5px 0;
+  }
+}

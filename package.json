@@ -1,0 +1,67 @@
+{
+  "name": "pokedex",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "eject": "craco eject",
+    "check-types": "tsc --pretty --noEmit",
+    "check-lint:eslint": "eslint 'src/**/*.{ts,tsx}'",
+    "check-lint": "yarn check-lint:eslint",
+    "check-format": "prettier --write 'src/**/*.{ts,tsx}' && yarn check-lint:eslint --fix",
+    "prepare": "husky install"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@craco/craco": "^7.0.0",
+    "@reduxjs/toolkit": "^1.9.5",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@types/react-router-dom": "^5.3.3",
+    "axios": "^1.3.6",
+    "classnames": "^2.3.2",
+    "lodash": "^4.17.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.7.0",
+    "react-scripts": "^5.0.1",
+    "typescript": "^4.9.4"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.191",
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@types/react-helmet": "^6.1.6",
+    "@types/react-router-dom": "^5.3.3",
+    "@typescript-eslint/eslint-plugin": "^5.48.2",
+    "@typescript-eslint/parser": "^5.48.2",
+    "craco-alias": "^3.0.1",
+    "eslint": "^8.32.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.3",
+    "postcss-scss": "^4.0.6",
+    "prettier": "^2.8.3",
+    "sass": "^1.58.0",
+    "sass-loader": "^13.2.0",
+    "sass-resources-loader": "^2.2.5"
+  }
+}

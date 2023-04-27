@@ -1,0 +1,31 @@
+.link {
+  color: #397487;
+  background-color: white;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 20px 0;
+}
+
+.loader {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  margin: 40px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 48px;
+  gap: 48px;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 36px;
+  }
+}

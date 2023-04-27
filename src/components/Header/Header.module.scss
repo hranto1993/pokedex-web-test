@@ -1,0 +1,15 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: rgb(57, 116, 135);
+  font-size: 50px;
+  font-weight: 800;
+  text-transform: capitalize;
+
+  @media (max-width: 568px) {
+    font-size: 26px;
+    font-weight: 32px;
+  }
+}

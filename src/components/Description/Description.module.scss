@@ -1,0 +1,61 @@
+.container {
+  display: grid;
+  grid-gap: 24px;
+  gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 16px 0;
+  margin-top: 12px;
+
+  &__item {
+    text-align: center;
+
+    &_name {
+      font-size: 18px;
+      line-height: 22px;
+      color: rgb(57, 116, 135);
+      text-transform: capitalize;
+    }
+
+    &_info {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}
+
+.title {
+  padding: 15px 0;
+  font-size: 24px;
+  line-height: 30px;
+  color: rgb(57, 116, 135);
+}
+
+.text {
+  font-size: 16px;
+}
+
+.percent {
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+
+  &__name {
+    color: rgb(57, 116, 135);
+  }
+
+  &__wrapper {
+    box-shadow: rgb(0 0 0 / 20%) 0px 4px 12px;
+    padding: 0 2px;
+    height: 27px;
+  }
+
+  &__box {
+    background-color: lightblue;
+    margin: 2px 0 10px;
+    padding: 3px;
+    font-size: 13px;
+    border-radius: 2px;
+    color: white;
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+  }
+}

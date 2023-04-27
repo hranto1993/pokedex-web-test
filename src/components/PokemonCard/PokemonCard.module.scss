@@ -1,0 +1,33 @@
+.wrapper {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+  max-width: 400px;
+
+  &:hover {
+    transform: scale(1.06);
+  }
+}
+
+.image {
+  min-height: 150px;
+
+  &__wrapper {
+    background-color: lightblue;
+    border-radius: 5px;
+  }
+}
+
+.title {
+  text-transform: capitalize;
+  font-family: 'Quicksand', sans-serif;
+  margin: 4px 0;
+}
+
+.subtitle {
+  margin: 2px 0;
+  font-family: 'Quicksand', sans-serif;
+  color: lightslategray;
+}
